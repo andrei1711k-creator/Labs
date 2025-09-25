@@ -1,16 +1,16 @@
-
-
 text = input("Введите строку: ")
 
-vowels = "aeiouAEIOU"
-res = ""
-
-for i in text:
-    if i not in vowels:
-        res +=i
-
-
-
+res = (text.replace("a", "")
+           .replace("e", "")
+           .replace("i", "")
+           .replace("o", "")
+           .replace("u", "")
+           .replace("A", "")
+           .replace("E", "")
+           .replace("I", "")
+           .replace("O", "")
+           .replace("U", ""))
 
 print("Исходная строка:", text)
 print("Строка без гласных:", res)
+
